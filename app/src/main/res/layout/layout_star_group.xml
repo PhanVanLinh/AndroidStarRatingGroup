@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TableRow>
+        <LinearLayout
+            >
+            <include layout="@layout/image_star"/>
+            <include layout="@layout/image_star"/>
+            <include layout="@layout/image_star"/>
+            <include layout="@layout/image_star"/>
+            <include layout="@layout/image_star"/>
+        </LinearLayout>
+        <include
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            layout="@layout/star_progress"
+            android:id="@+id/five_star_progress"
+            />
+        <TextView
+            android:id="@+id/five_star_value"
+            tools:text="1"
+            />
+    </TableRow>
+    <TableRow>
+        <LinearLayout
+            android:gravity="end"
+            >
+            <include layout="@layout/image_star"/>
+            <include layout="@layout/image_star"/>
+            <include layout="@layout/image_star"/>
+            <include layout="@layout/image_star"/>
+
+        </LinearLayout>
+        <include
+            layout="@layout/star_progress"
+            android:id="@+id/four_star_progress"
+            />
+        <TextView
+            android:id="@+id/four_star_value"
+            tools:text="1"
+            />
+    </TableRow>
+    <TableRow>
+        <LinearLayout
+            android:gravity="end"
+            >
+            <include layout="@layout/image_star"/>
+            <include layout="@layout/image_star"/>
+            <include layout="@layout/image_star"/>
+        </LinearLayout>
+        <include
+            layout="@layout/star_progress"
+            android:id="@+id/three_star_progress"
+            />
+        <TextView
+            android:id="@+id/three_star_value"
+            tools:text="1"
+            />
+    </TableRow>
+    <TableRow>
+        <LinearLayout
+            android:gravity="end"
+            >
+            <include layout="@layout/image_star"/>
+            <include layout="@layout/image_star"/>
+        </LinearLayout>
+        <include
+            layout="@layout/star_progress"
+            android:id="@+id/two_star_progress"
+            />
+        <TextView
+            android:id="@+id/two_star_value"
+            tools:text="1"
+            />
+    </TableRow>
+    <TableRow>
+        <LinearLayout
+            android:gravity="end"
+            >
+            <include layout="@layout/image_star"/>
+        </LinearLayout>
+        <include
+            layout="@layout/star_progress"
+            android:id="@+id/one_star_progress"
+            />
+        <TextView
+            android:id="@+id/one_star_value"
+            tools:text="1"
+            />
+    </TableRow>
+</TableLayout>
